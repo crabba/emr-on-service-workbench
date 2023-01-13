@@ -6,9 +6,9 @@ Source code for this guide is hosted at `GitHub <https://github.com:crabba/emr-o
 
 .. toctree::
    :numbered:
-   :maxdepth: 2
    :caption: Contents:
 
    introduction.rst
-   service-workbench.rst
-   hail-on-amazon-emr.rst
+   ami-image.rst
+   cloudformation-template.rst
+   hail-on-aws-spot.rst
