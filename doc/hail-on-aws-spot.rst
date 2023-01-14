@@ -26,21 +26,21 @@ hail_build.sh
 
 Make the following edits.
 
-`Line 45 <https://github.com/hms-dbmi/hail-on-AWS-spot-instances/blob/b9d6addd91e1f1c3a042011b027010ae066e6415/src/hail_build.sh#L45>` ::
+`Line 45 <https://github.com/hms-dbmi/hail-on-AWS-spot-instances/blob/b9d6addd91e1f1c3a042011b027010ae066e6415/src/hail_build.sh#L45>`_ ::
 
     -    HAIL_VERSION="master"
     -    SPARK_VERSION="2.4.0"
     +    HAIL_VERSION="main"
     +    SPARK_VERSION="3.1.2"
 
-`Line 86 <https://github.com/hms-dbmi/hail-on-AWS-spot-instances/blob/b9d6addd91e1f1c3a042011b027010ae066e6415/src/hail_build.sh#L86>` ::
+`Line 86 <https://github.com/hms-dbmi/hail-on-AWS-spot-instances/blob/b9d6addd91e1f1c3a042011b027010ae066e6415/src/hail_build.sh#L86>`_ ::
 
     -    sudo yum install g++ cmake git -y
     -    sudo yum -y install gcc72-c++ # Fixes issue with c++14 incompatibility in Amazon Linux
     +    sudo yum install -y gcc-c++ cmake git
     +    # sudo yum -y install gcc72-c++ # Fixes issue with c++14 incompatibility in Amazon Linux
 
-`Line 131 <https://github.com/hms-dbmi/hail-on-AWS-spot-instances/blob/b9d6addd91e1f1c3a042011b027010ae066e6415/src/hail_build.sh#L131>` ::
+`Line 131 <https://github.com/hms-dbmi/hail-on-AWS-spot-instances/blob/b9d6addd91e1f1c3a042011b027010ae066e6415/src/hail_build.sh#L131>`_ ::
 
     -    else  ./gradlew -Dspark.version=$SPARK_VERSION -Dbreeze.version=0.13.2 -Dpy4j.version=0.10.6 shadowJar archiveZip
     +    else  ./gradlew -Dspark.version=$SPARK_VERSION shadowJar archiveZip
