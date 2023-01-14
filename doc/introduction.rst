@@ -9,7 +9,7 @@ This is a guide for creating a Service Workbench workspace for Amazon EMR versio
 +========+=========+=========+
 | Date   | 4/1/19  | 1/20/22 |
 +--------+---------+---------+
-| EMR    | 5.23    | 6.50    |
+| EMR    | 5.27.1  | 6.50    |
 +--------+---------+---------+
 | Spark  | 2.4.4   | 3.1.2   |
 +--------+---------+---------+
@@ -32,7 +32,7 @@ AMI Image
     See the section :ref:`ami-image` for a full description.
 
 CloudFormation Template
-    The Service Workbench codebase file ``addons/addon-base-raas/packages/base-raas-cfn-templates/src/templates/service-catalog/emr-cluster.cfn.yml`` (`GitHub <https://github.com/awslabs/service-workbench-on-aws/blob/mainline/addons/addon-base-raas/packages/base-raas-cfn-templates/src/templates/service-catalog/emr-cluster.cfn.yml>`_) defines the EMR product.  This template file is launched by CloudFormation when a new EMR workspace is created by the user. 
+    The Service Workbench codebase file ``emr-cluster.cfn.yml`` (`GitHub <https://github.com/awslabs/service-workbench-on-aws/blob/mainline/addons/addon-base-raas/packages/base-raas-cfn-templates/src/templates/service-catalog/emr-cluster.cfn.yml>`_) defines the EMR product.  This template file is launched by CloudFormation when a new EMR workspace is created by the user. 
 
     See the section :ref:`cloudformation-template` for a full description.
     
